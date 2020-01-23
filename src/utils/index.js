@@ -1,5 +1,2 @@
-export const getImageUrl = ({ server, id, secret }) => {
-    const FARM_ID = 1;
-
-    return `https://farm${FARM_ID}.staticflickr.com/${server}/${id}_${secret}.jpg`;
-};
+export const getImageUrl = ({ farm = 1, server, id, secret }) =>
+    `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`;
