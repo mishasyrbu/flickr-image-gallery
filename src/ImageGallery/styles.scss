@@ -5,6 +5,7 @@
     align-items: center;
     padding-top: 20px;
     background-color: lightblue;
+    position: relative;
 
     > .image-list {
         display: grid;
@@ -31,5 +32,27 @@
             height: 140px;
             object-fit: cover;
         }
+    }
+
+    > .results-count {
+        height: 20px;
+        width: 100%;
+        padding: 0 10%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    > .loading-overlay {
+        position: absolute;
+        background-color: gray;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 10px;
+        top: 0;
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
     }
 }
