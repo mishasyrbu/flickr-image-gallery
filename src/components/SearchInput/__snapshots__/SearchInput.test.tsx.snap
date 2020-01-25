@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchInput /> it matches the snapshot 1`] = `
+<input
+  className="search-input"
+  onChange={[Function]}
+  type="text"
+  value=""
+/>
+`;

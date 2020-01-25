@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageGallery /> it matches the snapshot 1`] = `
+<div
+  className="image-gallery"
+>
+  <div
+    className="loading-overlay"
+  >
+    Loading...
+  </div>
+  <input
+    className="search-input"
+    onChange={[Function]}
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <div
+    className="results-count"
+  >
+    Found: 
+    0
+  </div>
+  <div
+    className="image-list"
+    onScroll={[Function]}
+  />
+</div>
+`;

@@ -3,14 +3,14 @@ import classNames from 'classnames';
 
 import './styles.scss';
 
-export interface Props {
+export interface SearchInputProps {
     placeholder?: string,
     className?: string,
     value: string,
     onChange: Function,
 }
 
-const SearchInput: React.FC<Props> = ({ placeholder, className, value, onChange }) => {
+const SearchInput: React.FC<SearchInputProps> = ({ placeholder, className, value, onChange }) => {
     const handleOnChangeEvent = (event: React.SyntheticEvent) => {
         const value = (event.target as HTMLInputElement).value;
         onChange(value);

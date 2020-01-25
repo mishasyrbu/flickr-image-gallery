@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageItem /> it matches the snapshot 1`] = `
+<img
+  className="image-item"
+  src=""
+/>
+`;

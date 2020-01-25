@@ -7,7 +7,7 @@ import { getImageUrl } from '../utils';
 import { loadPhotosApi } from '../services';
 import './styles.scss';
 
-export interface Props {
+export interface ImageGalleryProps {
   
 }
 
@@ -20,7 +20,7 @@ export interface PhotoObjet {
   title: string;
 }
 
-export interface State {
+export interface ImageGalleryState {
   searchQuery: string;
   photo: Array<PhotoObjet>;
   pages: number;
@@ -30,8 +30,8 @@ export interface State {
   loading: boolean;
 }
 
-class ImageGallery extends React.Component<Props, State> {
-  constructor(props: Props) {
+class ImageGallery extends React.Component<ImageGalleryProps, ImageGalleryState> {
+  constructor(props: ImageGalleryProps) {
     super(props);
 
     this.state = {
@@ -79,7 +79,6 @@ class ImageGallery extends React.Component<Props, State> {
     }
 
     loadPhotosApi(searchQuery, nextPage).then((photos) => {
-      console.log('photos', photos);
       if (scrollLoading) {
         this.setState((state) => ({ ...photos, photo: [...state.photo, ...photos.photo], loading: false }));
       } else {
